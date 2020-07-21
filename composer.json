@@ -1,8 +1,6 @@
 {
     "name": "luffyzhao/customs-message",
     "description": "海关跨境统一版系统企业对接报文生成",
-    "minimum-stability": "stable",
-    "type": "library",
     "authors": [
         {
             "name": "Luffy Zhao",

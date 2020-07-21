@@ -10,7 +10,7 @@
     "require": {
         "php": ">=7.1",
         "sabre/xml": "^2.2",
-        "ramsey/uuid": "^4.0"
+        "ramsey/uuid": "^3.7"
     },
     "autoload": {
         "psr-4": {

@@ -78,4 +78,17 @@ class Inventory implements XmlSerializable
         $this->inventoryList[] = $inventoryList;
         return $this;
     }
+
+    /**
+     * @param InventoryHead[] $inventoryLists
+     * @return Inventory
+     * @author luffyzhao@vip.126.com
+     */
+    public function setInventoryList(array $inventoryLists): Inventory
+    {
+        foreach($inventoryLists as $item){
+            $this->addInventoryList($item);
+        }
+        return $this;
+    }
 }

@@ -34,21 +34,24 @@ class Message
     }
 
     /**
-     * @param Entry\Inventory[] $inventory
+     * @param Entry\CEB621Message[] $inventory
+     * @param string $type
      * @return string
      * @throws \Exception
      * @author luffyzhao@vip.126.com
      */
-    public function map(array $inventory)
+    public function map(array $inventory, $type = 'CEB621Message')
     {
 
         return $this->service->write(
-            self::getNsKey('CEB621Message'),
+            self::getNsKey($type),
             [
                 array_merge($inventory, [$this->transfer])
             ]
         );
     }
+
+
 
     /**
      * @param $key

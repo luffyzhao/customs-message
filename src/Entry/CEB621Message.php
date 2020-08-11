@@ -52,7 +52,7 @@ class CEB621Message implements XmlSerializable
      */
     public function xmlSerialize(Writer $writer)
     {
-        $writer->writeElement(Message::getNsKey('CEB621Message'), [
+        $writer->writeElement(Message::getNsKey('Inventory'), [
             array_merge([$this->inventoryHead], $this->inventoryList)
         ]);
     }
@@ -81,10 +81,10 @@ class CEB621Message implements XmlSerializable
 
     /**
      * @param InventoryHead[] $inventoryLists
-     * @return Inventory
+     * @return CEB621Message
      * @author luffyzhao@vip.126.com
      */
-    public function setInventoryList(array $inventoryLists): Inventory
+    public function setInventoryList(array $inventoryLists): CEB621Message
     {
         foreach($inventoryLists as $item){
             $this->addInventoryList($item);

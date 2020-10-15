@@ -36,6 +36,7 @@ class InventoryHead implements XmlSerializable
     public $ownerName;
     public $tradeMode;
     public $trafMode;
+    public $billNo;
     public $loctNo;
     public $country;
     public $POD;
@@ -106,6 +107,7 @@ class InventoryHead implements XmlSerializable
             Message::getNsKey('ownerName') => $this->ownerName,
             Message::getNsKey('tradeMode') => $this->tradeMode,
             Message::getNsKey('trafMode') => $this->trafMode,
+            Message::getNsKey('billNo') => $this->billNo,
             Message::getNsKey('loctNo') => $this->loctNo,
             Message::getNsKey('country') => $this->country,
             Message::getNsKey('POD') => $this->POD,

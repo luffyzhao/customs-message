@@ -16,15 +16,15 @@ $database = [
     // 数据库类型
     'type' => 'mysql',
     // 服务器地址
-    'hostname' => 'cd-cdb-29bm53yk.sql.tencentcdb.com',
+    'hostname' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
     // 数据库名
-    'database' => 'hnwms',
+    'database' => 'xxxxxxxxxxxxxxxxx',
     // 用户名
-    'username' => 'root',
+    'username' => 'xxxxxxxxxxxxxxx',
     // 密码
-    'password' => 'qywms#2018#ok',
+    'password' => 'xxxxxxxxxxxxx',
     // 端口
-    'hostport' => '63539',
+    'hostport' => 'xxxxxxxxxxxxxxx',
     // 分布式
     'deploy' => 1,
     // 读写分享

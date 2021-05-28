@@ -63,7 +63,7 @@ class CEB311Message  implements XmlSerializable
      * @return $this
      * @author luffyzhao@vip.126.com
      */
-    public function addOrderList(OrderList $orderList): CEB303Message
+    public function addOrderList(OrderList $orderList): CEB311Message
     {
         $this->orderList[] = $orderList;
         return $this;

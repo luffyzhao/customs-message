@@ -8,7 +8,7 @@ use LCustoms\Message;
 use Sabre\Xml\Writer;
 use Sabre\Xml\XmlSerializable;
 
-class OrderList  implements XmlSerializable
+class OrderList implements XmlSerializable
 {
     public $gnum;
     public $itemNo;
@@ -39,7 +39,7 @@ class OrderList  implements XmlSerializable
      */
     public function xmlSerialize(Writer $writer)
     {
-        $writer->writeElement('OrderList', [
+        $writer->writeElement(Message::getNsKey('OrderList'), [
             Message::getNsKey('gnum') => $this->gnum,
             Message::getNsKey('itemNo') => $this->itemNo,
             Message::getNsKey('itemName') => $this->itemName,

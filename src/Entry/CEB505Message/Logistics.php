@@ -23,6 +23,9 @@ class Logistics
     public $grossWeight;
     public $packNo;
     public $goodsInfo;
+    public $ebcCode;
+    public $ebcName;
+    public $ebcTelephone;
 
     public function __construct()
     {
@@ -64,6 +67,9 @@ class Logistics
             Message::getNsKey('grossWeight') => $this->grossWeight,
             Message::getNsKey('packNo') => $this->packNo,
             Message::getNsKey('goodsInfo') => $this->goodsInfo,
+            Message::getNsKey('ebcCode') => $this->ebcCode,
+            Message::getNsKey('ebcName') => $this->ebcName,
+            Message::getNsKey('ebcTelephone') => $this->ebcTelephone,
         ];
     }
 }

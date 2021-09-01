@@ -21,6 +21,7 @@ class WayBillHead
     public $agentName;
     public $trafMode;
     public $trafName;
+    public $loctNo;
     public $voyageNo;
     public $billNo;
     public $domesticTrafNo;
@@ -59,6 +60,7 @@ class WayBillHead
             Message::getNsKey('copNo') => $this->copNo,
             Message::getNsKey('agentCode') => $this->agentCode,
             Message::getNsKey('agentName') => $this->agentName,
+            Message::getNsKey('loctNo') => $this->loctNo,
             Message::getNsKey('trafMode') => $this->trafMode,
             Message::getNsKey('trafName') => $this->trafName,
             Message::getNsKey('voyageNo') => $this->voyageNo,

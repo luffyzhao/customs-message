@@ -50,7 +50,7 @@ class CEB711Message  implements XmlSerializable
      *
      * If you are opening new elements, you must also close them again.
      */
-    public function xmlSerialize(Writer $writer)
+    public function xmlSerialize(Writer $writer): void
     {
         $writer->writeElement(Message::getNsKey('Delivery'), [
             array_merge([$this->deliveryHead], $this->deliveryList)

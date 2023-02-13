@@ -32,7 +32,7 @@ class DepartureList implements XmlSerializable
      * If you are opening new elements, you must also close them again.
      * @param Writer $writer
      */
-    public function xmlSerialize(Writer $writer)
+    public function xmlSerialize(Writer $writer): void
     {
         $writer->writeElement(Message::getNsKey('DepartureList'), [
             Message::getNsKey('gnum') => $this->gnum,

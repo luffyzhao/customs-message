@@ -39,6 +39,6 @@ $string = "<CEB622Message>
   </InventoryReturn>
 </CEB622Message>";
 
-$response = new \LCustoms\Response($string);
+$response = new \LCustoms\Receipt($string);
 
-print_r($response->getItems());
+print_r($response->toArray());

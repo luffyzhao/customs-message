@@ -51,7 +51,7 @@ class OrderHead  implements XmlSerializable
      *
      * If you are opening new elements, you must also close them again.
      */
-    public function xmlSerialize(Writer $writer)
+    public function xmlSerialize(Writer $writer): void
     {
         $writer->writeElement('OrderHead', [
             Message::getNsKey('guid') => $this->guid,

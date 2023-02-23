@@ -16,7 +16,7 @@ class Service extends \Sabre\Xml\Service
      * @throws \Exception
      * @author luffyzhao@vip.126.com
      */
-    public function write(string $rootElementName, $value, string $contextUri = null)
+    public function write(string $rootElementName, $value, string $contextUri = null): string
     {
         $w = $this->getWriter();
         $w->openMemory();

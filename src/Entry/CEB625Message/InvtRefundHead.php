@@ -38,7 +38,7 @@ class InvtRefundHead implements XmlSerializable
     public function __construct()
     {
         try {
-            $this->guid = Uuid::uuid4()->toString();
+            $this->guid = uuid::uuid6()->toString();
         } catch (\Exception $e) {
         }
         $this->appTime = Carbon::now()->format('YmdHis');

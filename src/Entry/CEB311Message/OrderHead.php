@@ -40,7 +40,7 @@ class OrderHead implements XmlSerializable
 
     public function __construct()
     {
-        $this->guid = Uuid::uuid4()->toString();
+        $this->guid = uuid::uuid6()->toString();
         $this->appTime = Carbon::now()->format('YmdHis');
         $this->appStatus = 2;
         $this->appType = 1;

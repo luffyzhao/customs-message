@@ -28,7 +28,7 @@ class Service extends \Sabre\Xml\Service
         $w->startElement($rootElementName);
 
         $w->startAttribute('guid');
-        $w->text(Uuid::uuid4()->toString());
+        $w->text(uuid::uuid6()->toString());
         $w->endAttribute();
         $w->startAttribute('version');
         $w->text('1.0');

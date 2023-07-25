@@ -10,7 +10,7 @@
   "require": {
     "php": ">=7.1",
     "sabre/xml": ">=2.2",
-    "ramsey/uuid": ">=3.0",
+    "ramsey/uuid": ">=4.2.3",
     "nesbot/carbon": ">=1.0",
     "guzzlehttp/guzzle": ">=6.0",
     "ext-simplexml": "*",

@@ -4,12 +4,13 @@
 namespace LCustoms\Entry;
 
 
+use LCustoms\Entry;
 use LCustoms\Entry\CEB403Message\Receipts;
 use LCustoms\Message;
 use Sabre\Xml\Writer;
 use Sabre\Xml\XmlSerializable;
 
-class CEB403Message  implements XmlSerializable
+class CEB403Message  extends Entry implements XmlSerializable
 {
     /**
      * @var Receipts

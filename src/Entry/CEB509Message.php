@@ -4,13 +4,14 @@
 namespace LCustoms\Entry;
 
 
+use LCustoms\Entry;
 use LCustoms\Entry\CEB509Message\DepartureHead;
 use LCustoms\Entry\CEB509Message\DepartureList;
 use LCustoms\Message;
 use Sabre\Xml\Writer;
 use Sabre\Xml\XmlSerializable;
 
-class CEB509Message implements XmlSerializable
+class CEB509Message  extends Entry implements XmlSerializable
 {
     /**
      * @var DepartureHead

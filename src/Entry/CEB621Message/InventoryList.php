@@ -8,7 +8,7 @@ use LCustoms\Message;
 use Sabre\Xml\Writer;
 use Sabre\Xml\XmlSerializable;
 
-class InventoryList  implements XmlSerializable
+class InventoryList extends \LCustoms\Entry\CEB625Message\InvtRefundList implements XmlSerializable
 {
     public $gnum;
     public $itemRecordNo;

@@ -4,12 +4,13 @@
 namespace LCustoms\Entry;
 
 
+use LCustoms\Entry;
 use LCustoms\Entry\CEB505Message\Logistics;
 use LCustoms\Message;
 use Sabre\Xml\Writer;
 use Sabre\Xml\XmlSerializable;
 
-class CEB505Message implements XmlSerializable
+class CEB505Message  extends Entry implements XmlSerializable
 {
 
     /**

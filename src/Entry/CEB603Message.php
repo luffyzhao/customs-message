@@ -4,13 +4,14 @@
 namespace LCustoms\Entry;
 
 
+use LCustoms\Entry;
 use LCustoms\Entry\CEB603Message\InventoryHead;
 use LCustoms\Entry\CEB603Message\InventoryList;
 use LCustoms\Message;
 use Sabre\Xml\Writer;
 use Sabre\Xml\XmlSerializable;
 
-class CEB603Message implements XmlSerializable
+class CEB603Message  extends Entry implements XmlSerializable
 {
     /**
      * @var InventoryHead

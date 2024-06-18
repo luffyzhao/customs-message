@@ -4,13 +4,14 @@
 namespace LCustoms\Entry;
 
 
+use LCustoms\Entry;
 use LCustoms\Entry\CEB607Message\WayBillHead;
 use LCustoms\Entry\CEB607Message\WayBillList;
 use LCustoms\Message;
 use Sabre\Xml\Writer;
 use Sabre\Xml\XmlSerializable;
 
-class CEB607Message implements XmlSerializable
+class CEB607Message  extends Entry implements XmlSerializable
 {
 
     /**

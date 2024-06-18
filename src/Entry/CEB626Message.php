@@ -4,12 +4,13 @@
 namespace LCustoms\Entry;
 
 
+use LCustoms\Entry;
 use LCustoms\Entry\CEB626Message\InvtRefundReturn;
 use LCustoms\Message;
 use Sabre\Xml\Writer;
 use Sabre\Xml\XmlSerializable;
 
-class CEB626Message implements XmlSerializable
+class CEB626Message  extends Entry implements XmlSerializable
 {
 
     /**

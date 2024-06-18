@@ -4,13 +4,14 @@
 namespace LCustoms\Entry;
 
 
+use LCustoms\Entry;
 use LCustoms\Entry\CEB711Message\DeliveryHead;
 use LCustoms\Entry\CEB711Message\DeliveryList;
 use LCustoms\Message;
 use Sabre\Xml\Writer;
 use Sabre\Xml\XmlSerializable;
 
-class CEB711Message  implements XmlSerializable
+class CEB711Message  extends Entry  implements XmlSerializable
 {
     /**
      * @var DeliveryHead

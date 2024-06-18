@@ -4,6 +4,7 @@
 namespace LCustoms\Entry;
 
 
+use LCustoms\Entry;
 use LCustoms\Entry\CEB625Message\InvtRefundHead;
 use LCustoms\Entry\CEB625Message\InvtRefundList;
 use LCustoms\Entry\Inventory\InventoryList;
@@ -11,7 +12,7 @@ use LCustoms\Message;
 use Sabre\Xml\Writer;
 use Sabre\Xml\XmlSerializable;
 
-class CEB625Message implements XmlSerializable
+class CEB625Message extends Entry implements XmlSerializable
 {
     /**
      * @var InvtRefundHead

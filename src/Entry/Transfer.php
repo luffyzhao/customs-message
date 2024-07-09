@@ -17,6 +17,16 @@ class Transfer implements XmlSerializable
     public $note;
 
     /**
+     * @var array
+     */
+    private $extras = [];
+
+    public function __construct(array $extras = [])
+    {
+        $this->extras = $extras;
+    }
+
+    /**
      * The xmlSerialize method is called during xml writing.
      *
      * Use the $writer argument to write its own xml serialization.
@@ -35,12 +45,12 @@ class Transfer implements XmlSerializable
      */
     public function xmlSerialize(Writer $writer): void
     {
-        $writer->writeElement(Message::getNsKey('BaseTransfer'), [
+        $writer->writeElement(Message::getNsKey('BaseTransfer'), array_merge([
             Message::getNsKey('copCode') => $this->copCode,
             Message::getNsKey('copName') => $this->copName,
             Message::getNsKey('dxpMode') => $this->dxpMode,
             Message::getNsKey('dxpId') => $this->dxpId,
             Message::getNsKey('note') => $this->note
-        ]);
+        ], $this->extras));
     }
 }

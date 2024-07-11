@@ -40,7 +40,7 @@ class OrderList implements XmlSerializable
      */
     public function xmlSerialize(Writer $writer): void
     {
-        $writer->writeElement('OrderList', [
+        $writer->writeElement(Message::getNsKey('OrderList'), [
             Message::getNsKey('gnum') => $this->gnum,
             Message::getNsKey('itemNo') => $this->itemNo,
             Message::getNsKey('itemName') => $this->itemName,

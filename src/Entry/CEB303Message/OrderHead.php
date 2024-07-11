@@ -53,7 +53,7 @@ class OrderHead  implements XmlSerializable
      */
     public function xmlSerialize(Writer $writer): void
     {
-        $writer->writeElement('OrderHead', [
+        $writer->writeElement(Message::getNsKey('OrderHead'), [
             Message::getNsKey('guid') => $this->guid,
             Message::getNsKey('appType') => $this->appType,
             Message::getNsKey('appTime') => $this->appTime,

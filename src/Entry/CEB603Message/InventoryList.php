@@ -46,7 +46,7 @@ class InventoryList implements XmlSerializable
      */
     public function xmlSerialize(Writer $writer): void
     {
-        $writer->writeElement('InventoryList', [
+        $writer->writeElement(Message::getNsKey('InventoryList'), [
             Message::getNsKey('gnum') => $this->gnum,
             Message::getNsKey('itemNo') => $this->itemNo,
             Message::getNsKey('itemName') => $this->itemName,

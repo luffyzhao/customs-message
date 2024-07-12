@@ -19,9 +19,9 @@ class Receipts
     public $ebpCode;
     public $ebpName;
     public $ebcCode;
-    public $ebcName;
-    public $orderNo;
-    public $payNo;
+    public $ebcName = '';
+    public $orderNo = '';
+    public $payNo = '';
     public $payCode;
     public $payName;
     public $charge;
@@ -64,9 +64,9 @@ class Receipts
             Message::getNsKey('ebcCode') => $this->ebcCode,
             Message::getNsKey('ebcName') => $this->ebcName,
             Message::getNsKey('orderNo') => $this->orderNo,
-            Message::getNsKey('payNo') => $this->payNo,
             Message::getNsKey('payCode') => $this->payCode,
             Message::getNsKey('payName') => $this->payName,
+            Message::getNsKey('payNo') => $this->payNo,
             Message::getNsKey('charge') => $this->charge,
             Message::getNsKey('currency') => $this->currency,
             Message::getNsKey('accountingDate') => $this->accountingDate,

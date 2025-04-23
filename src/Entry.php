@@ -38,8 +38,11 @@ abstract class Entry
     public function __toString()
     {
         $service = $this->setService();
+        $reflection = new \ReflectionClass($this);
+        $root = $reflection->getShortName();
+
         return (string)$service->write(
-            self::getNsKey(basename(get_class($this))),
+            $root,
             [
                 [$this, $this->transfer]
             ]
